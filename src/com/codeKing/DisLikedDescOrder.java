@@ -6,10 +6,10 @@ import java.util.Comparator;
  * To be ordered in decending order
 * */
 
-public class DisLikedDescOrder implements Comparator<DisLikedIngredient> {
+public class DisLikedDescOrder implements Comparator<DisOrLikedIngredient> {
 
     @Override
-    public int compare(DisLikedIngredient o1, DisLikedIngredient o2) {
+    public int compare(DisOrLikedIngredient o1, DisOrLikedIngredient o2) {
         return (int) (o2.ingredientTimes - o1.ingredientTimes);
     }
 
